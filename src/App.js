@@ -19,55 +19,59 @@ import './App.css';
 function App(props) {
   let data = 
   [
-      {
-        name: "amit",
-        age: 35,
-        salary: 40000,
-        bonus: 1000,
-        status: true
-      },
-      {
-        name: "ajay",
-        age: 25,
-        salary: 38000,
-        bonus: 2000,
-        status: false
-      },
-      {
-        name: "mayur",
-        age: 23,
-        salary: 50000,
-        bonus: 500,
-        status: true
-      },
-      {
-        name: "jay",
-        age: 29,
-        salary: 35000,
-        bonus: 600,
-        status: true
-      },
-      {
-        name: "raj",
-        age: 33,
-        salary: 22000,
-        bonus: 2000,
-        status: true
-      },
-    ]
-    let filterdata = data.filter((d, i) => (d.age > 25 && d.salary > 20000));
-    let total = filterdata.reduce((acc , d) => acc+d.salary+d.bonus , 0)
-    console.log(total)
+    {
+      id: 101,
+      name: 'Abacavir',
+      quantity: 25,
+      price: 150,
+      expiry: 2022,
+      status: true
+    },
+    {
+      id: 102,
+      name: 'Eltrombopag',
+      quantity: 90,
+      price: 550,
+      expiry: 2021,
+      status: true
+    },
+    {
+      id: 103,
+      name: 'Meloxicam',
+      quantity: 85,
+      price: 450,
+      expiry: 2025,
+      status: false
+    },
+    {
+      id: 104,
+      name: 'Allopurinol',
+      quantity: 50,
+      price: 600,
+      expiry: 2023,
+      status: true
+    },
+    {
+      id: 105,
+      name: 'Phenytoin',
+      quantity: 63,
+      price: 250,
+      expiry: 2021,
+      status: false
+    }
+  ];
+    let filterdata = data.filter((d, i) => (d.expiry > 2021 && d.price > 200));
+    let total = filterdata.reduce((acc , d) => acc+d.price , 0)
+    // console.log(total)
     return (
       <div>
         <table border = '1'>
             <tr>
-              <th><h1>name</h1></th>
-              <th><h1>age</h1></th> 
-              <th><h1>salary</h1></th>
-              <th><h1>bonus</h1></th>
+              <th><h1>Name</h1></th>
+              <th><h1>Quantity</h1></th> 
+              <th><h1>Price</h1></th>
+              <th><h1>Expiry</h1></th>
               <th><h1>status</h1></th>
-              <th><h1>total salary</h1></th>
               <th><h1>total</h1></th>
             </tr>
         {
@@ -75,12 +79,11 @@ function App(props) {
             return (
               <tr>
                 <td><h1> {d.name}</h1></td>
-                <td><h1> {d.age}</h1></td>
-                <td><h1> {d.salary}</h1></td>
-                <td><h1>{d.bonus}</h1></td>
+                <td><h1> {d.quantity}</h1></td>
+                <td><h1> {d.price}</h1></td>
+                <td><h1>{d.expiry}</h1></td>
                 <td><h1>{d.status.toString()}</h1></td>
-                <td><h1>{d.salary+d.bonus}</h1></td>
-                {i == 0 ? <td rowSpan={filterdata.length}><h1>{total}</h1></td> : null}
+                {i == 0 ? <td><h1>{total}</h1></td> : null}
               </tr>
             )
           })
