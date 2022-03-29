@@ -83,7 +83,7 @@ function App(props) {
                 <td><h1> {d.price}</h1></td>
                 <td><h1>{d.expiry}</h1></td>
                 <td><h1>{d.status.toString()}</h1></td>
-                {i == 0 ? <td><h1>{total}</h1></td> : null}
+                {i == 0 ? <td rowSpan={filterdata.length}><h1>{total}</h1></td> : null}
               </tr>
             )
           })
