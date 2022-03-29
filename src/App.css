@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+table{
+  text-align: center;
+}
+td{
+  width: 100vh;
+  text-align: center;
+
+}
+body{
+  background-color: #000;
+  color: #fff;
+}
