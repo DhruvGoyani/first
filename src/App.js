@@ -7,7 +7,7 @@ function App(props) {
   
     return (
       <div>
-        <Medicine />
+        <Medicine /> 
       </div>
     )
   
