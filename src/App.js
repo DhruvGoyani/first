@@ -4,6 +4,7 @@ import State from './container/State';
 import Medicine from './container/Medicine';
 import Arrayfunction from './container/Arrayfunction';
 import Objectfunction from './container/Objectfunction';
+import Country from './container/Country';
 
 
 function App(props) {
@@ -12,6 +13,7 @@ function App(props) {
       <div>
         <Medicine /> 
         <State />
+        <Country />
         <Arrayfunction />
         <Objectfunction />
       </div>

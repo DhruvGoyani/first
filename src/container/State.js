@@ -7,7 +7,7 @@ class State extends Component {
             id: 101,
             State: 'rajasthan'
         }
-    }
+    } 
 
     ChangeState = () => {
         this.stateName({

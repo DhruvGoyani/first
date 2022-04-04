@@ -1,21 +1,28 @@
 import React, { Component } from 'react';
 
-export default class country extends Component {
+class Country extends Component {
     constructor(props) {
         super(props);
-        
         this.country = {
-            id : 201,
-            CountryName : 'pakistan'
+            id : 101,
+            CountryName : 'pokistan'
         }
-        
+    }
+
+    changecoiuntry = () => {
+        this.Setcountry({
+            CountryName : 'india'
+        })
     }
     
     render() {
         return (
             <div>
-                {this.country.CountryName}        
+                {this.country.CountryName}
+                <button onClick={() => this.changecoiuntry()}>CHANGE COUNTRY</button>       
             </div>
         );
     }
 }
+
+export default Country;
