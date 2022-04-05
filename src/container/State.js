@@ -10,7 +10,7 @@ class State extends Component {
     } 
 
     ChangeState = () => {
-        this.stateName({
+        this.setstate({
             State: 'gujarat'
         })
     }
