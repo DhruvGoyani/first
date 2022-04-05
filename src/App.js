@@ -5,7 +5,7 @@ import Medicine from './container/Medicine';
 import Arrayfunction from './container/Arrayfunction';
 import Objectfunction from './container/Objectfunction';
 import Country from './container/Country';
-import Employee from './container/employee';
+import Employee from './container/Employee';
 
 
 function App(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function employee(props) {
+function Employee(props) {
     let data =
     [
       {
@@ -76,4 +76,4 @@ function employee(props) {
   );
 }
 
-export default employee;
+export default Employee;
