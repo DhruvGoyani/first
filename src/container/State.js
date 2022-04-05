@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+// class base commponent
 class State extends Component {
     constructor(props) {
         super(props);
