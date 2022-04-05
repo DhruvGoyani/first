@@ -3,26 +3,30 @@ import React, { Component } from 'react';
 class State extends Component {
     constructor(props) {
         super(props);
-        this.stateName = {
-            id: 101,
-            State: 'rajasthan'
+        this.state = {
+            id : 101,
+            stateName: 'rajasthan'
         }
     } 
 
     ChangeState = () => {
-        this.setstate({
-            State: 'gujarat'
+        this.setState({
+            stateName: 'gujarat'
         })
     }
     
     render() {
         return (
             <div>
-                {this.stateName.State}
-                <button onclick={() => this.ChangeState()}>CHANGE STATE</button>
+                {this.state.stateName}
+                <button onClick={() => this.ChangeState()}>CHANGE STATE</button>
             </div>
         );
     }
 }
 
 export default State;
+
+//this.state
+//this.setState()
+//this.state.id
