@@ -5,7 +5,6 @@ import Medicine from './container/Medicine';
 import Arrayfunction from './container/Arrayfunction';
 import Objectfunction from './container/Objectfunction';
 import Country from './container/Country';
-import Employee from './container/employee';
 
 
 function App(props) {
@@ -13,7 +12,6 @@ function App(props) {
     return (
       <div>
         <Medicine /> 
-        <Employee />
         <State />
         <Country />
         <Arrayfunction />
