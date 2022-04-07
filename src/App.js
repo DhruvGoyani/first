@@ -19,7 +19,7 @@ function App(props) {
         <Arrayfunction />
         <Objectfunction />
         <StateFun />
-      </div> 
+      </div>  
     )
   
 }
