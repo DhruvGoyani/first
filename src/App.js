@@ -7,6 +7,7 @@ import Objectfunction from './container/Objectfunction';
 import Country from './container/Country';
 import Employee from './container/Employee';
 import StateFun from './container/StateFun';
+import Counter from './container/Counter';
 
 function App(props) {
   
@@ -19,6 +20,7 @@ function App(props) {
         <Arrayfunction />
         <Objectfunction />
         <StateFun />
+        <Counter />
       </div>  
     )
   
