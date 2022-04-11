@@ -8,6 +8,7 @@ import Country from './container/Country';
 import Employee from './container/Employee';
 import Counter from './container/Counter';
 import StateFun from './container/StateFun';
+import Clock from './container/Clock';
 
 function App(props) {
   
@@ -21,6 +22,7 @@ function App(props) {
         <StateFun />
         <Objectfunction />
         <Counter />
+        <Clock />
       </div>  
     )
   
