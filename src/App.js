@@ -9,6 +9,7 @@ import Employee from './container/Employee';
 import Counter from './container/Counter';
 import StateFun from './container/StateFun';
 import Clock from './container/Clock';
+import ClockFun from './container/ClockFun';
 
 function App(props) {
   
@@ -23,6 +24,7 @@ function App(props) {
         <Objectfunction />
         <Counter />
         <Clock />
+        <ClockFun />
       </div>  
     )
   
