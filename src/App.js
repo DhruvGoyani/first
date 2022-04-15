@@ -11,35 +11,40 @@ import StateFun from './container/StateFun';
 import Clock from './container/Clock';
 import ClockFun from './container/ClockFun';
 import { useEffect, useState } from 'react';
+import Loading from './components/Loading/Loading';
+import Home from './container/Home/Home';
 
 const Homewithloading = Loading(Home)
 
 function App(props) {
   const [loading , setLoading] = useState(false);
-  const [data , setData] = useState([]);
+  const [ data , setData] = useState([]);
 
-  const userData = [
+  const userdata = [
     {
-      id : 101,
+      id : 101 ,
       name : 'amit'
     },
     {
-      id : 102,
+      id : 102 ,
       name : 'ajay'
     }
   ]
 
   useEffect(
     () => {
-      setTimeout(() => {setLoading(false); setData(userData) } , 2000)
-    }
-  )
-    return (
-      <div>
-        <Homewithloading 
-          isLoading = {loading}
-          Data = {data}
-        />
+      setLoading(true);
+      setTimeout(()=>{setLoading(false); setData(userdata)}, 2000)
+    },
+    []
+  )  
+  return (
+      <div> 
+         <Homewithloading
+          isloading = {loading}
+          data = {data}
+         />
+
           {/* <Medicine /> 
           <Employee />
           <State />

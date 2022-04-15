@@ -1,16 +1,18 @@
-import React from 'react'
-// HOC
-export default function Loading(component) {
-    return function withLoadingcomponent ({isLoading , data})
-    {
-    if (isLoading) {
-        return (
-            <p>Loading .....</p>
-        )
-    } else {
-        return (
-            <component data={data} />
-        )
+import React from 'react';
+
+function Loading(Components) {
+    return function withloadingcomponent({isloading , data}) {
+        console.log(isloading);
+        if (isloading) {
+            return(
+                <p>LOADING...</p>
+            )
+        } else {
+            return(
+                <Components data = {data} />
+            )
+        }
     }
 }
-}
+
+export default Loading;
